@@ -1,0 +1,27 @@
+{
+  "name": "playwright-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Jeff Nyman (https://testerstories.com)",
+  "license": "MIT",
+  "description": "Pedagogical exercise for Playwright UI testing.",
+  "scripts": {
+    "playground-ui": "npx playwright test --headed --project='Playground Tests'",
+    "playground": "npx playwright test --project='Playground Tests'",
+    "ludic-ui": "npx playwright test --headed --project='Ludic Tests'",
+    "ludic": "npx playwright test --project='Ludic Tests'",
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "training",
+    "ui",
+    "testing",
+    "playwright"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.1.0"
+  }
+}
