@@ -19,7 +19,7 @@ export default defineConfig({
 
   /* Shared settings for all projects. */
   use: {
-    // baseURL: 'http://127.0.0.1:3000',
+    baseURL: "https://testerstories.com",
 
     trace: "on-first-retry",
   },
