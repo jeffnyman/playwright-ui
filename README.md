@@ -50,6 +50,22 @@ You can also run headless:
 npm run playground
 ```
 
-## Implementation
+## Examples
 
-Details to come.
+```shell
+npx playwright test tests/playground/dragdrop.spec.ts --headed
+```
+
+This will test the ability to drag an element on the page to another element and then check that a state change occurred.
+
+```shell
+npx playwright test tests/playground/warcraft.spec.ts --headed
+```
+
+This will test the ability to find a particular table row and then get the contents of a given column from that row.
+
+```shell
+npx playwright test tests/playground/warping.spec.ts --headed
+```
+
+This will show how to handle a dynamically changing table and also provide an interative approach to the test data.
