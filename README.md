@@ -1,5 +1,7 @@
 # Learning Playwright (UI)
 
+The purpose of this repo is to show a lot of UI specific tests with Playwright, trying to deal with certain challenging situations. See some of the examples below.
+
 ## Prerequisites
 
 Make sure you have [Node.js](https://nodejs.org/en). The LTS version should be fine. You will also need the `npm` package manager (which comes with Node.js) or `yarn`. A development environment or IDE with TypeScript/JavaScript support will help. [Visual Studio Code](https://code.visualstudio.com/) is a good choice.
@@ -69,3 +71,9 @@ npx playwright test tests/playground/warping.spec.ts --headed
 ```
 
 This will show how to handle a dynamically changing table and also provide an interative approach to the test data.
+
+```shell
+npx playwright test tests/ludic/ludic.spec.ts --headed
+```
+
+This will show how to handle some interesting elements, such as a header that appears and disappears depending on the how the user scrolls, a "scroll to top" widget that has a built in timer and conditional display properties, and a dark/light mode toggle.
