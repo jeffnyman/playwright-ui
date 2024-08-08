@@ -31,6 +31,7 @@ export default defineConfig({
       testMatch: "**/*.spec.ts",
       use: {
         baseURL: "https://testerstories.com",
+        ...devices["Desktop Chrome"],
       },
     },
     {
@@ -39,12 +40,13 @@ export default defineConfig({
       testMatch: "**/*.spec.ts",
       use: {
         baseURL: "https://testerstories.com",
+        ...devices["Desktop Chrome"],
       },
     },
-    {
-      name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
-    },
+    // {
+    //   name: "chromium",
+    //   use: { ...devices["Desktop Chrome"] },
+    // },
 
     // {
     //   name: "firefox",
