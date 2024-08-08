@@ -2,11 +2,15 @@
 
 The purpose of this repo is to show a lot of UI specific tests with Playwright, trying to deal with certain challenging situations. See some of the examples below.
 
-## Prerequisites
+[![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-1c8620.svg?logo=playwright)](https://playwright.dev/docs/intro)
+[![Playwright - GitHub](https://img.shields.io/badge/GitHub-Playwright-1c8620.svg?logo=github)](https://github.com/microsoft/playwright/tree/main)
+[![Playwright - Stack Overflow](https://img.shields.io/badge/stackoverflow-Playwright-e87922.svg?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/playwright)
+
+## 🟢 Prerequisites
 
 Make sure you have [Node.js](https://nodejs.org/en). The LTS version should be fine. You will also need the `npm` package manager (which comes with Node.js) or `yarn`. A development environment or IDE with TypeScript/JavaScript support will help. [Visual Studio Code](https://code.visualstudio.com/) is a good choice.
 
-## Execution
+## 📦 Execution
 
 Clone the repository and then set everything up:
 
@@ -52,7 +56,7 @@ You can also run headless:
 npm run playground
 ```
 
-## Examples
+## 💼 Examples
 
 ```shell
 npx playwright test tests/playground/dragdrop.spec.ts --headed
@@ -77,3 +81,11 @@ npx playwright test tests/ludic/ludic.spec.ts --headed
 ```
 
 This will show how to handle some interesting elements, such as a header that appears and disappears depending on the how the user scrolls, a "scroll to top" widget that has a built in timer and conditional display properties, and a dark/light mode toggle.
+
+## 💻 Implementation
+
+I'm using my own site material for this. One is a sample article called [A Ludic Historian Précis](https://testerstories.com/xyzzy/ludic/article/precis.html). The other is my [Playwright Playwround](https://testerstories.com/xyzzy/).
+
+## ⚖ License
+
+The code used in this project and in the linked tutorial are licensed under the [MIT license](https://github.com/jeffnyman/playwright-ui/blob/main/LICENSE).
